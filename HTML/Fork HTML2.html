@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forkHTML2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body>
+    <table id="companies">        
+    <tr>
+        <th class="heading" colspan="6"><i>My tech stock picks</i></th>
+    </tr>
+    <tr>
+        <th>NAME</th>
+        <th><center>SYMBOL</center></th>
+        <th><center>CURRENT</center></th>
+        <th><center>52WK HI</center></th>
+        <th><center>52WK LO</center></th>
+        <th><center>P/E RATIO</center></th>
+    </tr>
+    <tr>
+        <td>Microsoft</td>
+        <td><center>MSFT</center></td>
+        <td><center>86-3/8</center></td>
+        <td><center>119-15/16</center></td>
+        <td><center>75-1/2</center></td>
+        <td><center>56.09</center></td>
+    </tr>
+    <tr>
+        <td>Cisco Systems</td>
+        <td><center>CSCO</center></td>
+        <td><center>72-1/8</center></td>
+        <td><center>82</center></td>
+        <td><center>24-13/16</center></td>
+        <td><center>400.69</center></td>
+    </tr>
+    <tr>
+        <td>America Online</td>
+        <td><center>AOL</center></td>
+        <td><center>63</center></td>
+        <td><center>95-13/16</center></td>
+        <td><center>38-15/32</center></td>
+        <td><center>350.00</center></td>
+    </tr>
+    <tr>
+        <td>Qwest Communications</td>
+        <td><center>Q</center></td>
+        <td><center>44-7/16</td>
+        <td><center>66</center></td>
+        <td><center>25-3/4</center></td>
+        <td><center>74.06</center></td>
+    </tr>
+    <tr>
+        <td>Dell Computers</td>
+        <td><center>DELL</center></td>
+        <td><center>53-59/64</center></td>
+        <td><center>59-11/16</center></td>
+        <td><center>31-3/8</center></td>
+        <td><center>86.97</center></td>
+    </tr>
+    
+    </table>
+    
+    <h3>HTML Submit</h3>
+    
+    <form action="/action_page.php">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="John"><br>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" placeholder="ddd" ><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+      
+      <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    
+    <h1>Registration Form</h1>
+    <form>
+        <label for="user">User name:</label><br>
+        <input type="text" id="username" class="username" name="username"><br>
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <label for="question">Where did you hear about us?</label>
+        <select id="answer" name="answer">
+          <option value="linkedIn">LinkedIn</option>
+          <option value="jobs">Jobs.bg</option>
+          <option value="company">Company's Website</option>
+          <option value="jobBoard">Job Board</option>
+        </select>
+    
+        <p>Gender:
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="female" value="Female">
+        <label for="female">Female</label><br>
+        </p>
+        <p>Comments:</p>
+        <textarea name="comments" id="comments" style="width: 300px; height: 200px;">
+        </textarea>
+        
+        <p>Click to accept our terms:
+        <input type="checkbox" id="check" name="check" value="check">
+        </p>
+        <input type=submit value="Register">
+        <input type=reset value="Reset">
+    </form>
+    </body>
+    </html>

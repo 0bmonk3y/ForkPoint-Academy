@@ -1,0 +1,15 @@
+table, tr, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+.heading{
+    font-size: 26px;
+    line-height: 2;
+}
+
+#companies th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #d6d6d6;
+    color: black;
+}

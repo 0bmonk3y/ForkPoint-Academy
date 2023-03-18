@@ -1,0 +1,72 @@
+body{
+    background-color: white;
+}
+#levelOne, #levelTwo{
+    display: flex;
+}
+#levelOne > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#levelTwo > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#levelOne > div:not(:last-child) {
+    margin-right: 7px;
+}
+#levelTwo > div:not(:last-child) {
+    margin-right: 7px;
+}
+.red{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+}
+.purple{
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+}
+.purple2{
+    width: 200px;
+    height: 50px;
+    background-color: purple;
+}
+.green{
+    width: 200px;
+    height: 50px;
+    background-color: green;
+}
+.green2{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+.magenta{
+    width: 50px;
+    height: 50px;
+    background-color: magenta;
+}
+.magenta2{
+    width: 200px;
+    height: 50px;
+    background-color: magenta;
+}
+.yellow{
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+}
+.yellow2{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+.cyan{
+    width: 50px;
+    height: 50px;
+    background-color: cyan;
+}
