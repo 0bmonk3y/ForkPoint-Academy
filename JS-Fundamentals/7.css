@@ -1,0 +1,7 @@
+#text1 > div {
+ color:red;
+}
+
+#text1 {
+    display: flex;
+}
