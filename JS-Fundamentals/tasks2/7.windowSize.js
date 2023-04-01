@@ -1,5 +1,5 @@
 window.onresize = getSize;
-window.onload = getSize;
+// window.onload = getSize;
 
 function getSize () {
 let w = window.innerWidth;

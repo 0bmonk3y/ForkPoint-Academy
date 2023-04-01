@@ -1,3 +1,7 @@
+//Use the firstChild property to access an element.
+let firstChild = document.getElementById('title').firstChild;
+console.log(firstChild);
+
 //Use the lastChild property to access an element.
 let lastChild = document.getElementById('page').lastChild;
 console.log(lastChild);

@@ -1,22 +1,20 @@
 //Use the appendChild method to add a node.
 let pageNode = document.getElementById("page");
 let newParagraph = document.createElement("p");
-newParagraph.textContent = "New paragraph added with appendChild method";
+newParagraph.innerHTML = "New paragraph added with appendChild method";
 pageNode.appendChild(newParagraph);
 
 //Use the insertBefore method to add a node.
-let newHeading = document.createElement("h2");
+let newHeading = document.createElement("h1");
 newHeading.textContent = "New Heading added with insertBefore method";
-let firstChild = pageNode.firstChild;
-pageNode.insertBefore(newHeading, firstChild);
+pageNode.insertBefore(newHeading, pageNode.firstChild);
 
 //Use the removeChild method to remove a node.
-let contentNode = document.getElementById("content");
-let paragraphToRemove = contentNode.lastChild;
-contentNode.removeChild(paragraphToRemove);
+let contentNode = document.getElementById('content')
+let removeParagraph = document.querySelector('#content :nth-child(2)')
+contentNode.removeChild(removeParagraph);
 
 //Use the replaceChild method to replace a node.
-let titleNode = document.getElementById("title");
-let newTitle = document.createElement("h1");
-newTitle.textContent = "New Page Title";
-pageNode.replaceChild(newTitle, titleNode);
+let newTitle = document.createElement("h2");
+newTitle.textContent = "The Last Page Title";
+contentNode.replaceChild(newTitle, contentNode.firstChild);
